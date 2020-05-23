@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "NetworkDispatcher",
+        "repositoryURL": "https://github.com/ctarda/NetworkDispatcher.git",
+        "state": {
+          "branch": null,
+          "revision": "01275fba51bba00c438829f36a845aa52695faaa",
+          "version": "0.0.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
