@@ -1,3 +1,7 @@
+import Foundation
+import NetworkDispatcher
+
 struct MatrixClient {
-    var text = "Hello, World!"
+    private let dispatcher: Dispatcher
+    private let baseURL: URL
 }

@@ -15,14 +15,14 @@ let package = Package(
             targets: ["MatrixClient"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/ctarda/NetworkDispatcher.git", from: "0.0.1")
+        .package(url: "https://github.com/ctarda/NetworkDispatcher.git", from: "0.0.3")
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages which this package depends on.
         .target(
             name: "MatrixClient",
-            dependencies: []),
+            dependencies: ["NetworkDispatcher"]),
         .testTarget(
             name: "MatrixClientTests",
             dependencies: ["MatrixClient"]),
