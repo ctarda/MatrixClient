@@ -3,8 +3,13 @@ import Combine
 import NetworkDispatcher
 
 public struct MatrixClient {
-    private let dispatcher: Dispatcher
     private let baseURL: URL
+    private let dispatcher: Dispatcher
+    
+    public init(baseURL: URL, dispatcher: Dispatcher) {
+        self.baseURL = baseURL
+        self.dispatcher = dispatcher
+    }
 }
 
 public extension MatrixClient {
